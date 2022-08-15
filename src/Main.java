@@ -6,12 +6,13 @@ public class Main {
         //Задание 1 и Задание 3
         int[] arr = generateRandomArray();
         int sumAll = 0;
+        int day = 30;
 
         for (int n = 0; n < arr.length; n++) {
             sumAll = sumAll + arr[n];
         }
         System.out.println("Сумма трат за месяц составила " + sumAll + " рублей");
-        System.out.println("Средняя сумма трат за месяц составила " + (double)sumAll/30.0 + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + (double) sumAll/(double) day + " рублей");
         System.out.println();
 
         //Задание 2
@@ -41,6 +42,7 @@ public class Main {
         System.out.println();
         System.out.print("Массив для проверки заданий: " + Arrays.toString(arr));
     }
+
 
 
     public static int[] generateRandomArray() {
